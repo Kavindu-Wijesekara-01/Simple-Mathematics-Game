@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    }
+
+
+#body{
+    background: linear-gradient(180deg,#c0eff0, #309099);
+    width: 100%;
+    height: 100%;
+}    
+
+h1.headName{
+    text-align: center;
+    margin-top: 35px;
+    font-size: 60px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.startbtn{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 40px 44%;
+    width: 11%;
+    height: 8%;
+    background: linear-gradient(90deg,#cb7cf2,#8443da);
+    border-radius: 45px;
+    color: aliceblue;
+    cursor: pointer;
+    border: none;
+    transition: width 0.5s ease-in-out;
+   
+}
+.startbtn:hover{
+    
+    
+    background: linear-gradient(90deg, #ac34e7,#6616d0);
+
+  
+    
+
+}
+
+.game_section{
+    margin-left: 41%;
+}
+.game_section h2{
+    display: inline;
+    position: relative;
+    font-size: 72px;
+    margin: 25px;
+    
+}   
+.inputButton{
+    margin-left: 34%;
+    margin-top: 40px;
+}
+.inputButton #inNum{
+    width: 30%;
+    height: 7%;
+    border-radius: 45px;
+    border: none;
+}
+::placeholder{
+    color: rgb(163, 170, 174);
+    font-size: 20px;
+}
+input[type=text], select {
+  
+  padding: 20px 20px;
+  font-size: 20px;
+  
+}
+
+.inputButton #inputbtn{
+    width: 14%;
+    height: 7%;
+    margin-left: 20px;
+    font-size: 24px;
+    background: linear-gradient(90deg,#c973f5,#7e34df);
+    font-weight: bold;
+    border-radius: 45px;
+    color: aliceblue;
+    border: none;
+    transition: 0.6s;
+    cursor: pointer;
+}
+.inputButton #inputbtn:hover{
+    background: linear-gradient(-90deg,#6616d0, #ac34e7);
+    transition: 0.6s;
+
+}
+.numberbar{
+    margin-left: 23%;
+    font-size: 39px;
+    margin-top: 30px;
+    padding: 20px;
+    
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.numberbar #correct{
+    color: green;
+    transition: 0.5s;
+}
+.numberbar #wrong{
+    color: red;
+    transition: 0.5s;
+
+}
+.numberbar #miss{
+    color: yellow;
+    transition: 0.5s;
+
+}
+.numberitem{
+    font-size: 39px;
+    padding-right: 20px;
+}
+.bararea{
+    display:block;
+    position: absolute;
+    margin-left: 37%;
+    margin-top: 30px;
+}
+    
+.bararea .progress{
+    width: 10cm;
+    height: 0.8cm;
+   
+}
+
+.speed .label{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.speed .input{
+    width: 4.5cm;
+    margin-left: 20px;
+}
+@media screen and (max-width : 1148px){
+    h1.headName{
+        font-size: 54px;
+    }
+    .startbtn{
+        font-size: 23px;
+        width: 12%;
+    }
+    .numberbar{
+        margin-left: 22%;
+    }
+    .game_section{
+        margin-left: 38%;
+    }
+    .inputButton #inputbtn{
+        font-size: 18px;
+    }
+    ::placeholder{
+        font-size: 15px;
+    }
+    .numberbar,.numberitem{
+        font-size: 30px;
+    }
+    .numberbar{
+        width: 70%;
+        margin-left: 18%;
+    }
+    .bararea{
+        margin-left: 32%;
+    }
+    .inputButton #inputbtn{
+        height: 7%;
+    }
+
+}
+
+@media screen and (max-width : 980px){
+    h1.headName{
+        font-size: 50px;
+    }
+    .startbtn{
+        font-size: 19px;
+        width: 12%;
+        height: 5%;
+    }
+    .numberbar{
+        margin-left: 20%;
+    }
+    .game_section{
+        margin-left: 38%;
+    }
+    .inputButton #inputbtn{
+        font-size: 16px;
+    }
+    .inputButton #inNum{
+        height: 5%;
+        width: 25%;
+    }
+    .numberbar,.numberitem{
+        font-size: 28px;
+    }
+    .numberbar{
+        margin-left: 13%;
+        font-size: 30px;
+    }
+    .bararea{
+        margin-left: 32%;
+    }
+    .inputButton #inputbtn{
+        height: 5%;
+    }
+
+}
+@media screen and (max-width : 500px){
+    h1.headName{
+        font-size: 40px;
+    }
+    .startbtn{
+        font-size: 16px;
+        width: 21%;
+        height: 5%;
+        margin-left: 40%;
+    }
+    .numberbar{
+        margin-left: 15%;
+    }
+    .game_section{
+        margin-left: 22%;
+
+    }
+    .inputButton{
+        margin-left: 20%;
+    }
+    .inputButton #inputbtn{
+        font-size: 17px;
+        width: 30%;
+    }
+    .inputButton #inNum{
+        height: 5%;
+        width:40%;
+    }
+    ::placeholder{
+        font-size: 11px;
+        margin-top: 20px;
+    }
+    .numberbar,.numberitem{
+        font-size: 28px;
+        
+        
+    }
+    .numberbar.number-block{
+        margin-left: 10%;
+        font-size: 20px; 
+    }
+    .bararea{
+        margin-left: 12%;
+        
+    }
+    .bararea .progress{
+        width: 80%;
+    }
+    .inputButton #inputbtn{
+        height: 5%;
+    }
+    .speed .label{
+        font-size: 20px;
+    }
+    .speed .input{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width : 400px){
+    h1.headName{
+        font-size: 35px;
+    }
+    .startbtn{
+        width: 26%;
+        margin-left: 37%;
+    }
+    .game_section{
+        margin-left: 17%;
+    }
+    .game_section h2{
+        font-size: 50px;
+    }
+    .inputButton #inNum{
+        height: 5%;
+    }
+    input[type=text], select {
+  
+        padding: 10px 10px;
+        font-size: 15px;
+    
+    }
+    .numberbar{
+        margin-left: 14%;
+        font-size: 23px;
+    }
+    .bararea .progress{
+        margin-left: 5%;
+    }
+    
+}

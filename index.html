@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id ="body">
+    <h1 class = "headName">Clever & Punny</h1>
+    <button id="startbtn" class="startbtn" onclick="startTimer();">START</button>
+
+    <div id = "game_section" class="game_section">
+        <h2 id="display" >key</h2>
+        <h2 id="insymbol">key</h2>
+        <h2 id="display2">key</h2>
+    </div>
+
+    <div class="inputButton">
+        <input type="text" id="inNum" placeholder="Enter Your Answer">
+        <button id="inputbtn" onclick="getvalue();">Submit</button>
+    </div>  
+
+    <p class="numberbar">
+        Correct Inputs : <span id="correct" class="numberitem">0</span>
+        Wrong Inputs : <span id="wrong" class="numberitem">0</span>
+        Miss : <span id="miss" class="numberitem">0</span>   
+    </p>
+
+    <div class="bararea">
+        <progress value="0" max="100" class="bar progress"></progress>
+
+        <br><br>
+        <div class="speed">
+            <label for="speed" class="bar label">Control Your Speed</label>
+            <input type="range" id="speed" min="10" max="800" class="bar input">
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
